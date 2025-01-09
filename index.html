@@ -100,11 +100,13 @@
                 // Hapus efek background gradient dari semua section
                 document.querySelectorAll('section').forEach(section => {
                     section.style.background = '#1e1e1e'; // Reset ke warna hitam
+                    console.log("reset warna");
                 });
-
+                
                 // Tambahkan efek hanya pada section yang sesuai
                 const targetSection = document.querySelector(link.getAttribute('href'));
                 targetSection.style.background = 'linear-gradient(45deg, #1e1e1e, #000)';
+                console.log("warna hitam");
             });
         });
 
